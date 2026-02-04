@@ -4,7 +4,7 @@ import CopyField from "../utils/CopyField";
 
 const Container = styled.section`
   background: #A24857;
-  padding: 80px 60px;
+  padding: 2%;
   text-align: center;
   display: flex;
   flex-direction: column;
