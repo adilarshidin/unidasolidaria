@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.section`
-  background: #eec9dc;
+  background: #fff5f8;
   padding: 80px 60px;
   text-align: center;
   display: flex;

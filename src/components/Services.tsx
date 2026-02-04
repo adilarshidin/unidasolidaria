@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import meeting from "../assets/meeting.jpeg";
-import birthday from "../assets/birthday.jpeg";
-import truck from "../assets/truck.jpeg"
+import meeting from "../assets/meeting.webp";
+import birthday from "../assets/birthday.webp";
+import truck from "../assets/truck.webp"
 
 const Container = styled.div`
   display: flex;
   padding: 2%;
-  background: #ffffff;
+  background: #fff5f8;
   gap: 2%;
 
   @media (max-width: 1024px) {
