@@ -2,14 +2,14 @@ import styled from "styled-components";
 import { FaWhatsapp, FaTelegram, FaInstagram } from "react-icons/fa";
 
 const StyledFooter = styled.footer`
-  background: #ffe6ed;
-  color: #333;
+  background: background-color: #cd1c18;
+  background-image: linear-gradient(326deg, #cd1c18 0%, #66023c 74%);;
+  color: #DEDCCF;
   padding: 60px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  border-radius: 24px;
 `;
 
 const Credits = styled.p`

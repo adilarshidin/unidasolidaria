@@ -2,11 +2,13 @@ import styled from "styled-components";
 import meeting from "../assets/meeting.webp";
 import birthday from "../assets/birthday.webp";
 import truck from "../assets/truck.webp";
+import clothesRepair from "../assets/clothes_repair.webp";
+import sewing from "../assets/sewing.webp";
 
 const Container = styled.div`
   display: flex;
   padding: 2%;
-  background: #fff5f8;
+  background: #A24857;
   gap: 2%;
 
   @media (max-width: 1024px) {
@@ -27,7 +29,8 @@ const LeftPanel = styled.div`
 const Dot = styled.div`
   width: 80px;
   height: 80px;
-  background: #b10000;
+  background-color: #cd1c18;
+  background-image: linear-gradient(326deg, #cd1c18 0%, #66023c 74%);
   border-radius: 50%;
   margin-bottom: 40px;
 
@@ -61,7 +64,7 @@ const BlackDotAndLine = styled.div`
 
 const LeftTitle = styled.div`
   background: #1f1f1f;
-  color: white;
+  color: #DEDCCF;
   padding: 30px;
   border-radius: 12px;
 
@@ -114,7 +117,7 @@ const ServiceRow = styled.div`
 
 const ServiceTitle = styled.div`
   background: #1f1f1f;
-  color: white;
+  color: #DEDCCF;
   padding: 14px 20px;
   border-radius: 10px;
   min-width: 260px;
@@ -127,8 +130,9 @@ const ServiceTitle = styled.div`
 `;
 
 const ServiceDescription = styled.div`
-  background: #b10000;
-  color: white;
+  background-color: #cd1c18;
+  background-image: linear-gradient(326deg, #cd1c18 0%, #66023c 74%);
+  color: #DEDCCF;
   padding: 18px 24px;
   border-radius: 10px;
   max-width: 520px;
@@ -149,13 +153,9 @@ const Connector = styled.div`
   }
 `;
 
-const ProjectsHeader = styled.h2`
-  color: #b10000;
+const Projectsh3 = styled.h2`
+  color: #DEDCCF;
   margin-top: 5%;
-`;
-
-const Header = styled.h3`
-  color: #b10000;
 `;
 
 const Projects = styled.div`
@@ -177,17 +177,18 @@ const ProjectCard = styled.div`
 `;
 
 const Images = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 20px;
 
   @media (max-width: 1024px) {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr); /* always 2 images per row on small screens */
   }
 `;
 
 const CircleImage = styled.img`
-  width: 140px;
-  height: 140px;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* keep images square */
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #b10000;
@@ -195,6 +196,7 @@ const CircleImage = styled.img`
 
 const ProjectContent = styled.div`
   max-width: 520px;
+  color: #DEDCCF;
 
   h3 {
     margin: 0 0 8px;
@@ -277,7 +279,7 @@ const Home = () => {
 
       <Container>
         <BlackDotAndLine />
-        <ProjectsHeader>Otros proyectos</ProjectsHeader>
+        <Projectsh3>Otros proyectos</Projectsh3>
 
         <Projects>
           <ProjectCard>
@@ -287,7 +289,7 @@ const Home = () => {
             </Images>
 
             <ProjectContent>
-              <Header>Comidas de voluntarios y cumpleaños</Header>
+              <h3>Comidas de voluntarios y cumpleaños</h3>
               <p>
                 Realizamos comidas de voluntarios y celebramos los cumpleaños
                 del mes todos juntos.
@@ -301,10 +303,25 @@ const Home = () => {
             </Images>
 
             <ProjectContent>
-              <Header>Mudanzas</Header>
+              <h3>Mudanzas</h3>
               <p>
                 Ayudamos en las mudanzas mediante la furgoneta del banco de
                 alimentos y damos salida a muebles de segunda mano.
+              </p>
+            </ProjectContent>
+          </ProjectCard>
+
+          <ProjectCard>
+            <Images>
+              <CircleImage src={clothesRepair} />
+              <CircleImage src={sewing} />
+            </Images>
+
+            <ProjectContent>
+              <h3>Cursos</h3>
+              <p>
+                Ofrecemos cursos de reparación de ropa y costura, enseñando técnicas 
+                prácticas para reutilizar, arreglar y personalizar prendas.
               </p>
             </ProjectContent>
           </ProjectCard>

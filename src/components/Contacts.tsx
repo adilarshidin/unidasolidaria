@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { PiLinktreeLogoFill } from "react-icons/pi";
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
   padding: 2%;
   gap: 5%;
-  background: #ffffff;
+  background: #A24857;
 
   @media (max-width: 1024px) {
     flex-direction: column;
@@ -22,9 +23,10 @@ const Content = styled.div`
 `;
 
 const InfoCard = styled.div`
-  background: #f6f6f6;
+  background: #800000;
   padding: 4%;
   border-radius: 14px;
+  color: #DEDCCF;
 
   h3 {
     margin-top: 0;
@@ -41,7 +43,7 @@ const SocialLink = styled.a`
   align-items: center;
   gap: 12px;
   background: #1f1f1f;
-  color: white;
+  color: #DEDCCF;
   padding: 14px 18px;
   border-radius: 10px;
   text-decoration: none;
@@ -107,6 +109,16 @@ const Contacts = () => {
             <FaFacebook />
             Unida Solidaria
           </SocialLink>
+
+          <SocialLink
+            href="https://linktr.ee/unidasolidaria"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ backgroundColor: "#32CD32" }}
+          >
+            <PiLinktreeLogoFill />
+            Linktree
+          </SocialLink>
         </InfoCard>
 
         <InfoCard>
@@ -129,10 +141,10 @@ const Contacts = () => {
         </InfoCard>
 
         <MapWrapper>
-          <h3>Ubicación</h3>
+          <h3 style={{ color: "#DEDCCF" }}>Ubicación</h3>
           <iframe
             title="Ubicación de la organización"
-            src="https://vigo.maps.arcgis.com/apps/webappviewer/index.html?id=95730d02d392425da3fe379a2336ac15&marker=-8.72439,42.23467&level=17"
+            src="https://vigo.maps.arcgis.com/apps/webappviewer/index.html?id=95730d02d392425da3fe379a2336ac15&marker=-8.7233,42.2333&level=17"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />

@@ -8,10 +8,10 @@ import {
   FaClock,
 } from "react-icons/fa";
 
-import costumes from "../assets/costumes.webp";
+import group from "../assets/group.webp";
 import inStore from "../assets/in_store.webp";
 import lection from "../assets/lection.webp";
-import presents from "../assets/presents.webp";
+import present from "../assets/present.webp";
 import line from "../assets/line.webp";
 
 const Wrapper = styled.div`
@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   gap: 80px;
   padding: 60px 20px;
-  background: #fff5f8;
+  background: #A24857;
 `;
 
 const Section = styled.section<{ reverse?: boolean }>`
@@ -28,7 +28,8 @@ const Section = styled.section<{ reverse?: boolean }>`
   align-items: center;
   gap: 40px;
   padding: 40px 30px;
-  background: #ffe6ed;
+  background-color: #cd1c18;
+  background-image: linear-gradient(326deg, #cd1c18 0%, #66023c 74%);
   border-radius: 24px;
 
   @media (max-width: 1024px) {
@@ -57,14 +58,14 @@ const TextBlock = styled.div`
 const Title = styled.h2`
   font-size: 28px;
   font-weight: 700;
-  color: #1f1f1f;
+  color: #DEDCCF;
   margin-bottom: 16px;
 `;
 
 const Text = styled.p`
   font-size: 18px;
   line-height: 1.6;
-  color: #333;
+  color: #DEDCCF;
 `;
 
 const SectionImage = styled.img`
@@ -85,13 +86,13 @@ const Home: React.FC = () => {
       icon: <FaQuestionCircle />,
       title: "QUÉ SOMOS?",
       text: "Pretendemos ser una luz en medio de la difícil situación que atraviesan familias de nuestra ciudad, mostrándoles el amor de Dios hacia ellos a través de nuestro trabajo.",
-      img: costumes,
+      img: group,
     },
     {
       icon: <FaHeart />,
       title: "LEMA",
       text: "Desde el corazón de Vigo con Vigo en el corazón",
-      img: presents,
+      img: present,
       reverse: true,
     },
     {
