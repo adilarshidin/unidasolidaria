@@ -108,6 +108,9 @@ const Menu = () => {
         <MenuLink to="/services" $active={pathname === "/services"}>
           Servicios
         </MenuLink>
+        <MenuLink to="/help" $active={pathname === "/help"}>
+          Ayuda
+        </MenuLink>
         <MenuLink to="/contacts" $active={pathname === "/contacts"}>
           Contactos
         </MenuLink>
@@ -128,6 +131,9 @@ const Menu = () => {
         </MobileLink>
         <MobileLink to="/services" onClick={() => setOpen(false)}>
           Servicios
+        </MobileLink>
+        <MobileLink to="/help" onClick={() => setOpen(false)}>
+          Ayuda
         </MobileLink>
         <MobileLink to="/contacts" onClick={() => setOpen(false)}>
           Contactos

@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaUniversity } from "react-icons/fa";
 import { PiLinktreeLogoFill } from "react-icons/pi";
+import { MdEmail, MdPhone } from "react-icons/md";
+import CopyField from "../utils/CopyField";
 
 const Container = styled.div`
   display: flex;
@@ -19,7 +21,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
-  max-width: 640px;
+  width: auto;
 `;
 
 const InfoCard = styled.div`
@@ -35,6 +37,23 @@ const InfoCard = styled.div`
 
   p {
     line-height: 1.5;
+  }
+`;
+
+const InfoItem = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #1f1f1f;
+  color: #DEDCCF;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-bottom: 10px;
+
+  svg {
+    width: 22px;
+    height: 22px;
   }
 `;
 
@@ -87,6 +106,24 @@ const Contacts = () => {
   return (
     <Container>
       <Content>
+        {/* Contact Info Card */}
+        <InfoCard>
+          <h3>Contactos</h3>
+          <InfoItem>
+            <MdEmail />
+            <a href="emailto:info@unidasolidaria.org">info@unidasolidaria.org</a>
+          </InfoItem>
+          <InfoItem>
+            <MdPhone />
+            <a href="tel:+34600123456">+34 600 123 456</a>
+          </InfoItem>
+          <InfoItem>
+            <FaUniversity />
+            <CopyField label="IBAN" value="ES75 2080 5020 0830 4005 6547" />
+          </InfoItem>
+        </InfoCard>
+
+        {/* Social Media Card */}
         <InfoCard>
           <h3>Redes sociales</h3>
 
@@ -121,6 +158,7 @@ const Contacts = () => {
           </SocialLink>
         </InfoCard>
 
+        {/* Responsible People Card */}
         <InfoCard>
           <h3>Responsables</h3>
           <p>
@@ -131,15 +169,7 @@ const Contacts = () => {
           </p>
         </InfoCard>
 
-        <InfoCard>
-          <h3>Colaboradores</h3>
-          <p>
-            Algunos de los colaboradores son también usuarios del banco de
-            alimentos, participando activamente en las labores de apoyo y
-            solidaridad.
-          </p>
-        </InfoCard>
-
+        {/* Map Card */}
         <MapWrapper>
           <h3 style={{ color: "#DEDCCF" }}>Ubicación</h3>
           <iframe
