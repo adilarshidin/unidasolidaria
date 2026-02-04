@@ -95,7 +95,7 @@ const Contacts = () => {
             style={{ backgroundColor: "#E1306C" }}
           >
             <FaInstagram />
-            Instagram — @unidasolidaria
+            @unidasolidaria
           </SocialLink>
 
           <SocialLink
@@ -105,7 +105,7 @@ const Contacts = () => {
             style={{ backgroundColor: "#1877F2" }}
           >
             <FaFacebook />
-            Facebook — Unida Solidaria
+            Unida Solidaria
           </SocialLink>
         </InfoCard>
 
