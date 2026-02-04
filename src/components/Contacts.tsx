@@ -3,6 +3,7 @@ import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 const Container = styled.div`
   display: flex;
+  justify-content: center;
   padding: 2%;
   gap: 5%;
   background: #ffffff;
@@ -10,40 +11,6 @@ const Container = styled.div`
   @media (max-width: 1024px) {
     flex-direction: column;
     gap: 5%;
-  }
-`;
-
-const LeftPanel = styled.div`
-  min-width: 260px;
-`;
-
-const Dot = styled.div`
-  width: 80px;
-  height: 80px;
-  background: #b10000;
-  border-radius: 50%;
-  margin-bottom: 40px;
-
-  @media (max-width: 1024px) {
-    display: none;
-  }
-`;
-
-const TitleCard = styled.div`
-  background: #1f1f1f;
-  color: white;
-  padding: 30px;
-  border-radius: 12px;
-
-  h2 {
-    margin: 0;
-    font-size: 24px;
-  }
-
-  span {
-    display: block;
-    margin-top: 10px;
-    opacity: 0.8;
   }
 `;
 
@@ -117,14 +84,6 @@ const MapWrapper = styled.div`
 const Contacts = () => {
   return (
     <Container>
-      <LeftPanel>
-        <Dot />
-        <TitleCard>
-          <h2>Contacto</h2>
-          <span>Unida Solidaria</span>
-        </TitleCard>
-      </LeftPanel>
-
       <Content>
         <InfoCard>
           <h3>Redes sociales</h3>
