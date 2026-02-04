@@ -5,9 +5,9 @@ import truck from "../assets/truck.jpeg"
 
 const Container = styled.div`
   display: flex;
-  padding: 60px;
+  padding: 2%;
   background: #ffffff;
-  gap: 80px;
+  gap: 2%;
 
   @media (max-width: 1024px) {
     flex-direction: column;
