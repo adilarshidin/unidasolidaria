@@ -69,8 +69,7 @@ const MobileNav = styled.nav<{ open: boolean }>`
   flex-direction: column;
   gap: 12px;
   padding: 20px;
-  transform: ${({ open }) =>
-    open ? "translateY(0)" : "translateY(-20px)"};
+  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-20px)")};
   opacity: ${({ open }) => (open ? 1 : 0)};
   pointer-events: ${({ open }) => (open ? "auto" : "none")};
   transition: all 0.25s ease;

@@ -41,9 +41,19 @@ const Badge = styled.div<{ success?: boolean }>`
   font-weight: bold;
 `;
 
-const ObjectiveCard = ({ success, text }: { success: boolean, text: string }) => (
+const ObjectiveCard = ({
+  success,
+  text,
+}: {
+  success: boolean;
+  text: string;
+}) => (
   <CardBase>
-    {success ? <Badge success={success}>✓</Badge> : <Badge success={success}>✕</Badge>}
+    {success ? (
+      <Badge success={success}>✓</Badge>
+    ) : (
+      <Badge success={success}>✕</Badge>
+    )}
     <p>{text}</p>
   </CardBase>
 );

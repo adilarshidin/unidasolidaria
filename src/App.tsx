@@ -15,7 +15,7 @@ const App = () => {
       <ViewRoutes />
       <Footer />
     </MainContainer>
-  )
+  );
 };
 
 export default App;

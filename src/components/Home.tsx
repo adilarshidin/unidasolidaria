@@ -1,11 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import { FaHeart, FaGlobe, FaHandsHelping, FaQuestionCircle } from "react-icons/fa";
+import {
+  FaHeart,
+  FaGlobe,
+  FaHandsHelping,
+  FaQuestionCircle,
+  FaClock,
+} from "react-icons/fa";
 
 import costumes from "../assets/costumes.webp";
 import inStore from "../assets/in_store.webp";
 import lection from "../assets/lection.webp";
 import presents from "../assets/presents.webp";
+import line from "../assets/line.webp";
 
 const Wrapper = styled.div`
   display: flex;
@@ -99,6 +106,12 @@ const Home: React.FC = () => {
       text: "En Unida Solidaria, como brazo solidario de la Iglesia Unida de Vigo, buscamos cubrir las necesidades básicas de las personas (bienes y servicios) a través del amor de Cristo.",
       img: lection,
       reverse: true,
+    },
+    {
+      icon: <FaClock />,
+      title: "HORARIO DE ATENCIÓN",
+      text: "Por la mañana de 9 a 14 de lunes a sábado, y los miércoles y jueves por la tarde de 16 a 18:30.",
+      img: line,
     },
   ];
 

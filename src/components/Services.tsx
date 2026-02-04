@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import meeting from "../assets/meeting.webp";
 import birthday from "../assets/birthday.webp";
-import truck from "../assets/truck.webp"
+import truck from "../assets/truck.webp";
 
 const Container = styled.div`
   display: flex;
@@ -20,7 +20,7 @@ const LeftPanel = styled.div`
   min-width: 260px;
 
   @media (max-width: 1024px) {
-    min-width: 100px; 
+    min-width: 100px;
   }
 `;
 
@@ -152,11 +152,11 @@ const Connector = styled.div`
 const ProjectsHeader = styled.h2`
   color: #b10000;
   margin-top: 5%;
-`
+`;
 
 const Header = styled.h3`
   color: #b10000;
-`
+`;
 
 const Projects = styled.div`
   display: flex;
@@ -289,8 +289,8 @@ const Home = () => {
             <ProjectContent>
               <Header>Comidas de voluntarios y cumpleaños</Header>
               <p>
-                Realizamos comidas de voluntarios y celebramos los cumpleaños del mes
-                todos juntos.
+                Realizamos comidas de voluntarios y celebramos los cumpleaños
+                del mes todos juntos.
               </p>
             </ProjectContent>
           </ProjectCard>
@@ -303,8 +303,8 @@ const Home = () => {
             <ProjectContent>
               <Header>Mudanzas</Header>
               <p>
-                Ayudamos en las mudanzas mediante la furgoneta del banco de alimentos y
-                damos salida a muebles de segunda mano.
+                Ayudamos en las mudanzas mediante la furgoneta del banco de
+                alimentos y damos salida a muebles de segunda mano.
               </p>
             </ProjectContent>
           </ProjectCard>

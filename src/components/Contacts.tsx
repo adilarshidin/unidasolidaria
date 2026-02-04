@@ -80,7 +80,9 @@ const SocialLink = styled.a`
   text-decoration: none;
   font-weight: 600;
   margin-bottom: 12px;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 
   &:hover {
     background: #b10000;
