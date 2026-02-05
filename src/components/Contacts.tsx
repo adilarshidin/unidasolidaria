@@ -174,7 +174,7 @@ const Contacts = () => {
           <h3 style={{ color: "#DEDCCF" }}>Ubicación</h3>
           <iframe
             title="Ubicación de la organización"
-            src="https://vigo.maps.arcgis.com/apps/webappviewer/index.html?id=95730d02d392425da3fe379a2336ac15&marker=-8.7233,42.2333&level=17"
+            src="https://vigo.maps.arcgis.com/apps/webappviewer/index.html?id=95730d02d392425da3fe379a2336ac15&marker=-8.7233,42.2337&level=17"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
