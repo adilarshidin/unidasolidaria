@@ -305,8 +305,8 @@ const Home = () => {
             <ProjectContent>
               <h3>Mudanzas</h3>
               <p>
-                Ayudamos en las mudanzas mediante la furgoneta del banco de
-                alimentos y damos salida a muebles de segunda mano.
+                Ayudamos en las mudanzas mediante la furgoneta
+                y damos salida a muebles de segunda mano.
               </p>
             </ProjectContent>
           </ProjectCard>
